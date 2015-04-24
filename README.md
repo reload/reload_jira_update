@@ -12,3 +12,15 @@ $conf['jira_rest_password'] = 'correcthorsebatterystaple';
 Whenever Drupal runs its project update check the module creates an
 issue in Jira for newly discovered security updates, revoked modules,
 and unsupported modules.
+
+## Dependencies
+
+The dependencies are (including indirect dependencies):
+
+ * `ctools`
+ * `entity`
+ * `features`
+ * `jira_rest`
+ * `jira_rest_rules`
+ * `rules`
+ * `update_rules`
