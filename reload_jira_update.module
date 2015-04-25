@@ -24,7 +24,7 @@ function reload_jira_update_jira_rest_rules_issuedata_alter(array &$issuedata, a
     }
 
     if ($site_name = variable_get('site_name', FALSE)) {
-      $labels[] = $site_name;
+      $labels[] = drupal_clean_css_identifier($site_name);
       $issuedata['fields']['customfield_12300'] = $site_name;
     }
 
