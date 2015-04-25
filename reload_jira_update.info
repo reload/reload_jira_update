@@ -2,6 +2,7 @@ name = Reload Jira Update
 description = Create Jira issue for important project updates
 core = 7.x
 package = Reload
+configure = admin/config/workflow/rules/reaction/manage/rules_reload_jira_update_create_issue
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = jira_rest_rules
