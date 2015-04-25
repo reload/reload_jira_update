@@ -36,10 +36,17 @@ function reload_jira_update_default_rules_configuration() {
           }
         },
         { "jira_rest_rules_create_issue" : {
-            "project" : "TEST",
-            "issuetype" : "Bug",
-            "summary" : "[project-name:value] [recommended-release:value] ([host:value])",
-            "description" : "Project: [project-title:value] ([project-name:value])\\r\\nProject status: [status-label:value]\\r\\n\\r\\nCurrent release: [current-release:value]\\r\\nRecommended release: [recommended-release:value]\\r\\n\\r\\nHost: [host:value]\\r\\n"
+            "USING" : {
+              "project" : "TEST",
+              "issuetype" : "Bug",
+              "summary" : "[project-name:value] [recommended-release:value] ([host:value])",
+              "description" : "Project: [project-title:value] ([project-name:value])\\r\\nProject status: [status-label:value]\\r\\n\\r\\nCurrent release: [current-release:value]\\r\\nRecommended release: [recommended-release:value]\\r\\n\\r\\nHost: [host:value]\\r\\n"
+            },
+            "PROVIDE" : {
+              "jira_issue_id" : { "jira_issue_id" : "Jira issue ID" },
+              "jira_issue_key" : { "jira_issue_key" : "Jira issue key" },
+              "jira_issue_self" : { "jira_issue_self" : "Jira issue REST API endpoint" }
+            }
           }
         },
         { "update_rules_process_once" : {
