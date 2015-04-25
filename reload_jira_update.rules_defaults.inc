@@ -40,7 +40,7 @@ function reload_jira_update_default_rules_configuration() {
               "project" : "OUT",
               "issuetype" : "Security",
               "summary" : "[project-name:value] [recommended-release:value]",
-              "description" : "Drupal project: [project-title:value] ([project-name:value])\\r\\nDrupal project status: [status-label:value]\\r\\n\\r\\nCurrent release: [current-release:value]\\r\\nRecommended release: [recommended-release:value]\\r\\n\\r\\nHost: [site:url]"
+              "description" : "Drupal project: [project-title:value] ([project-name:value])\\r\\nDrupal project status: [status-label:value]\\r\\n\\r\\nCurrent release: [current-release:value]\\r\\nRecommended release: [recommended-release:value]\\r\\nRelease link: [release-link:value]\\r\\n\\r\\nHost: [site:url]"
             },
             "PROVIDE" : {
               "jira_issue_id" : { "jira_issue_id" : "Jira issue ID" },
