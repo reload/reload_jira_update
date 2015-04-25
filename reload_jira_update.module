@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Reload Jira Update feature.
  */
+
+include_once 'reload_jira_update.features.inc';

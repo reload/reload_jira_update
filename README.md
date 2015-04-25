@@ -23,4 +23,5 @@ The dependencies are (including indirect dependencies):
  * `jira_rest`
  * `jira_rest_rules`
  * `rules`
+ * `strongarm`
  * `update_rules`
