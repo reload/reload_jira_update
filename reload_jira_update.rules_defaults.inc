@@ -39,7 +39,7 @@ function reload_jira_update_default_rules_configuration() {
             "USING" : {
               "project" : "OUT",
               "issuetype" : "Security",
-              "summary" : "[project-name:value] [recommended-release:value]",
+              "summary" : "[project-name:value] ([recommended-release:value])",
               "description" : "Drupal project: [project-title:value] ([project-name:value])\\r\\nDrupal project status: [status-label:value]\\r\\n\\r\\nCurrent release: [current-release:value]\\r\\nRecommended release: [recommended-release:value]\\r\\nRelease link: [release-link:value]\\r\\n\\r\\nHost: [site:url]"
             },
             "PROVIDE" : {
