@@ -22,6 +22,7 @@ function reload_jira_update_default_rules_configuration() {
             "value" : { "value" : { "1" : "1", "2" : "2", "3" : "3" } }
           }
         },
+        { "list_contains" : { "list" : [ "release-type" ], "item" : "Security update" } },
         { "NOT update_rules_already_processed" : {
             "group_identifier" : "1",
             "project_name" : "[project-name:value]",
