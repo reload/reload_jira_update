@@ -37,3 +37,21 @@ The dependencies are (including indirect dependencies):
  * `ultimate_cron`
  * `update_rules`
    * Version 1.2 or [patched](https://www.drupal.org/files/issues/update_rules-release_link_for_recommended_release-2477835-4.patch) with [#2477835](https://www.drupal.org/node/2477835).
+
+### A few notes about the Ultimate Cron dependency
+
+The module depends on Ultimate Cron to ensure that the site checks for
+insecure modules at least every hour.
+
+If your site doesn't already use Ultimate Cron there is a few things
+to notice:
+
+* Does it use Elysia Cron instead? The modules are incompatible and
+  shouldn't be run simultaneously. You can keep Elysia -- just remove
+  the Ultimate Cron dependency and make sure the update manager job is
+  run once every hour.
+
+* Ultimate Cron is expected to be triggered from `crontab` /
+  `/etc/cron.d/something` every minute. Usually a standard Drupal cron
+  is not triggered that often (every hour, every six hours). You
+  should change the cronjob to run every minute.
