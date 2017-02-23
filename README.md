@@ -11,6 +11,14 @@ $conf['jira_rest_password'] = 'correcthorsebatterystaple';
 
 Find the real credentials in [Meldium](https://launchpad.meldium.com/#/launchpad?edit=1ade21f3-88b8-4512-a371-53c0ec3e0840).
 
+Install this as custom module on the site (it really is just a bunch
+of configuration -- you are encourage to reconfigure the stuff
+anyway).
+
+Reconfigure the rule to create Jira issues in the appropriate project
+for the site instead of the default which is `OUT`. You do that by
+changing it here: https://github.com/reload/reload_jira_update/blob/7.x-1.x/reload_jira_update.rules_defaults.inc#L42
+
 Whenever Drupal runs its project update check the module creates an
 issue in Jira for newly discovered security updates, revoked modules,
 and unsupported modules.
