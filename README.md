@@ -9,6 +9,8 @@ $conf['jira_rest_username'] = 'marianne';
 $conf['jira_rest_password'] = 'correcthorsebatterystaple';
 ```
 
+Find the real credentials in [Meldium](https://launchpad.meldium.com/#/launchpad?edit=1ade21f3-88b8-4512-a371-53c0ec3e0840).
+
 Whenever Drupal runs its project update check the module creates an
 issue in Jira for newly discovered security updates, revoked modules,
 and unsupported modules.
