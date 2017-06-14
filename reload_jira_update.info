@@ -18,4 +18,5 @@ features[rules_config][] = rules_reload_jira_update_create_issue
 features[rules_config][] = rules_reload_jira_update_status_label
 features[ultimate_cron_job][] = update_cron
 features[variable][] = jira_rest_jirainstanceurl
+features[variable][] = update_check_disabled
 features[variable][] = update_check_frequency
