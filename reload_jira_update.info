@@ -20,4 +20,3 @@ features[ultimate_cron_job][] = update_cron
 features[variable][] = jira_rest_jirainstanceurl
 features[variable][] = update_check_disabled
 features[variable][] = update_check_frequency
-mtime = 1496229743
